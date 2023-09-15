@@ -33,6 +33,6 @@ jobs:
 
     - name: Sync Files to S3 Bucket
       run: |
-        aws s3 cp ./index.html s3://your-s3-bucket-name/
-        aws s3 cp ./game.js s3://your-s3-bucket-name/
+        aws s3 cp ./index.html s3://knowit-cloud-trainee-chris-123/
+        aws s3 cp ./game.js s3://knowit-cloud-trainee-chris-123/
       working-directory: ./
