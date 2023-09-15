@@ -21,9 +21,13 @@ jobs:
     - name: Install Dependencies and Run Tests
       run: |
         npm install
-        npm test
       working-directory: ./  # Set the working directory to the root of the repository
-
+    
+    - name: Install Playwright Browsers
+      run: npx playwright install --with-deps
+   
+    - name: Run Playwright tests
+      run: npx playwright test
 
     - name: Install AWS CLI
       run: |
